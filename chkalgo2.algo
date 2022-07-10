@@ -1,0 +1,31 @@
+ALGORITHM algorithm_name
+VAR
+set1,set2 : ARRAY_OF INTEGER[20];
+htab:HASH_TABLE<INTEGER,INTEGER>;
+i,nbocc:INTEGER;
+sumd:INTEGER:=0;
+sumk:INTEGER:=0;   
+t:ARRAY_OF INTEGER
+BEGIN
+FOR i FROM 0  TO set1.length-1   DO
+   htab.insert(set1[i],1)
+   
+END_FOR
+  FOR i FROM 0  TO set2.length-1   DO
+   IF (=true) THEN
+    nbocc:=htab.get(set2[i])+1
+    htab.insert(set2[i],nhtab.lookup(set2[i])bocc)
+ ELSE 
+ htab.insert(set2[i],1)
+   END_IF
+   
+END_FOR  
+t:=htab.getkeys()
+FOR i FROM 0 TO t.length-1 STEP step  DO
+   IF (htab.get(t[i])=1) THEN
+    sumd+:=t[i]
+   ELSE
+   sumk+:=t[i]*2
+   END_IF
+END_FOR
+END
